@@ -1,0 +1,330 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Friggeri Resume/CV 
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+% Modified by Luis Perez (luisperez@college.harvard.edu)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\usepackage{comment} % Allows commenting sections of code dynamically
+\usepackage{pdfpages}
+
+% Include and exclude different sections of resume (swap comment to do so)
+\excludecomment{pubs}
+%\includecomment{pubs}
+
+%\excludecomment{transcript}
+\includecomment{transcript}
+
+%\excludecomment{detailed}
+\includecomment{detailed}
+
+
+\begin{document}
+
+\header{luis}{perez}{\href{mailto:luis.perez.live@gmail.com}{luis.perez.live@gmail.com}} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+(cell)
++1 (936) 250 0347
+~
+(permanent)
+1700 Douglass Road
+Nacogdoches, Texas 75964
+United States
+~
+(college)
+38 Leverett Mail Center
+Cambridge, Massachusetts 02138
+United States
+\section{technical toolbox}
+{\color{red} $\varheartsuit$} OCaml
+Python, C, R
+Django
+Javascript (jQuery)
+CSS3 \& HTML5
+\LaTeX, MATLAB
+\textbf{Familiar:} Java, D3, SQL, PHP
+\section{web development}
+\href{http://www.actonadream.org/}{actonadream.org}
+\href{http://lperez.site44.com}{lperez.site44.com}
+\href{https://www.hcs.harvard.edu/~harvarddiscuss/index.php/en/}{harvarddiscuss.com}
+~
+(on-line presence)
+\href{mailto:luisperez@college.harvard.edu}{luisperez@college}
+\href{http://facebook.com/kandluis}{fb://kandluis}
+\href{http://www.linkedin.com/pub/luis-perez/73/793/770}{lkin://luisperez}
+\href{http://www.github.com/kandluis}{git://kandluis}
+\href{http://www.twitter.com/lui\_instinct}{@lui\_instinct}
+\section{operating systems}
+Windows 8/7/Vista/XP, Linux (Ubuntu,Fedora)
+\section{languages}
+english - proficient
+spanish - fluent
+french - conversational
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+%------------------------------------------------
+\entry
+{August 2012--Present}
+{HARVARD UNIVERSITY}
+{Cambridge, Massachusetts}
+{A.B in Computer Science/Mathematics. 
+May 2016 |
+\mydescription{GPA}{3.95/4.0} | 
+\mydescription{Concentration GPA}{4.0/4.0}\\
+Awards: Detur Prize Winner, John Harvard Scholar \\
+Relevant Coursework: Advanced Data Structures and Algorithms,  Systems Programming and Machine Organization, Theory of Computation, Intro to Computer Science (I \& II)\\
+Commit 16 hours per week to Computer Science/Mathematics Teaching Fellowship.\\
+}
+\begin{detailed}
+%------------------------------------------------
+\entry
+{August 2011--May 2012}
+{STEPHEN F. AUSTIN STATE UNIVERSITY}
+{Nacogdochces, Texas}
+{Visiting Student. \\
+Relevant Coursework: Calculus I, U.S. Government/History \\
+\mydescription{Overall GPA}{4.0}}
+\end{detailed}
+%------------------------------------------------
+\entry
+{August 2008--May 2012}
+{NACOGDOCHES HIGH SCHOOL}
+{Nacogdoches, Texas}
+{Graduated valedictorian with high honors. \mydescription{GPA}{106.56} | \mydescription{ SAT}{M 790, R 800, W 800}\\
+French Club President, National Merit Scholar Finalist, MUN Security Council Rep., AP Scholar}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{developer experience}
+
+%------------------------------------------------
+\entry
+{August 2014--Present}
+{INSTITUTE FOR QUANTITATIVE SOCIAL SCIENCES}
+{Cambridge,Massachusetts}
+{\mydescription{Developer}{Implemented intelligent data exploration portal for \href{http://thedata.org/}{Dataverse}. Designed data exploration algorithms and visualizations using Python (pandas) and Vincent/D3. Interfaced with Dataverse API for access to millions of research datasets.  
+}}
+
+%------------------------------------------------
+\entry
+{May 2014--August 2014}
+{HARVARD FOREST}
+{Petersham,Massachusetts}
+{\mydescription{Research Assistant}{Designed and developed data provenance collection library for the R scripting environment. Improved data derivation graph visualizations in Java. Created testing suites for software with Apache Ant/R. Presented software demo to research scientists.
+}}
+
+%------------------------------------------------
+\entry
+{May 2013--August 2013}
+{WYSS INSTITUTE}
+{Cambridge,Massachusetts}
+{\mydescription{Research Assistant} 
+{Led implementation of Python physics-based simulation designed to explore decentralized algorithms for collective construction of complex structures. Interfaced with structural analysis program using PyWin32. Presented results to group of peers and professional researchers. 
+}}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP SECTION
+%----------------------------------------------------------------------------------------
+
+\section{leadership experience}
+
+\entry
+{August 2013 - Present}
+{SCHOOL OF ENGINEERING AND APPLIED SCIENCES}
+{Cambridge,Massachusetts}
+{\mydescription{Teaching Fellow and Course Assistant}{Taught class of \~20 students to program in C, PHP,JavaScript and SQL, and introduced object-oriented concepts. Held office hours for all course students (\~700). Graded problem sets and exams.}}
+
+%------------------------------------------------
+\entry
+{August 2013--Present}
+{HARVARD MATHEMATICS DEPARTMENT}
+{Cambridge,Massachusetts}
+{\mydescription{Course Assistant}{Taught classes of \~30 undergraduates covering introductory linear algebra and calculus. Maintained weekly office hours and problem-solving sessions. Graded assignments.}}
+
+%------------------------------------------------
+\entry
+{August 2012--Present}
+{ACT ON A DREAM AT HARVARD COLLEGE}
+{Cambridge, Massachusetts}
+{\mydescription{Director of Public Outreach}{Maintained \href{http://www.actonadream.org}{Act On A Dream}, a site dedicated to sharing valuable resources with undocumented students @ Harvard and their allies. Managed communication with national and local groups as well as organizing educational events. 
+}}
+\begin{detailed}
+%------------------------------------------------
+\entry
+{January 2013--Present}
+{THE HARVARD CRIMSON}
+{Cambridge, Massachusetts}
+{\mydescription{Technology Associate}
+{Maintained \href{http://thecrimson.com}{The Harvard Crimson} website, along with HighRise advertisement database. Utilized Django with administrative interface hosted on Amazon SW3. Heroku development server and git version control.}}
+
+%------------------------------------------------
+\entry
+{January 2013 -- Present}
+{BUREAU OF STUDY COUNCIL}
+{Cambridge, Massachusetts}
+{\mydescription{OPT Tutor}
+{Tutored students in a varied array of mathematical subjects covering classes from Single Variable Pre-Calculus to Multi-variable Calculus (Math 21a). Topics included coordinate transformations, multiple integrals, Stokes' Theorem, Green's Theorem, and Divergence Theorem.}}
+
+%------------------------------------------------
+\entry
+{August 2010--August 2012}
+{ALLELUIA HILLS RANCH}
+{Nacogdoches, Texas}
+{\mydescription{Ranch Hand}{Maintained upkeep of ranch. Fed horses, watered, mowed, cleaned debris, and performed other jobs as necessary.}}
+\end{detailed}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{detailed}
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{Fall 2013, Fall 2014}
+{Detour Book Price}
+{Harvard Faculty}
+{Awarder to sophomores/juniors who have attained very high academic standing at the end of their freshman/sophomore year.}
+\entry
+{Fall 2013, Fall 2014}
+{John Harvard Scholar}
+{Harvard College}
+{Awarded to students in the top 5\% of their class.}
+\entry
+{Spring 2012}
+{AP Scholar with Distinction}
+{CollegeBoard}
+{Awarded to student with four or more passing AP Scores.}
+\entry
+{Spring 2012}
+{Outstanding Senior Award}
+{Nacogdoches High School}
+{Awarded to best student in graduating class.}
+\entry
+{Spring 2011}
+{National Laureat Certificate}
+{National French Contest}
+{Awarded to top 10 in National French Contest.}
+\entry
+{Fall 2009}
+{Placed in IB Biology Examination}
+{Stephen F. Austin State University}
+{Awarded for 3rd Place.}
+\end{entrylist}
+%------------------------------------------------
+\end{detailed}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{personal projects}
+
+%------------------------------------------------
+\entry
+{Winter 2014-2015}
+{Fire iOS Application}
+{Hackathon Project, Google NYC}
+{Reach emergency contacts with limited connectivity though SMS. Written in Swift.}
+%------------------------------------------------
+\entry
+{Summer 2014}
+{Automatic Mailing System}
+{Pet Project, Summer Internship}
+{Implementation of Edit Distance Dynamic programming algorithm for auto-email program.}
+%------------------------------------------------
+\entry
+{December 14, 2013}
+{Quantum Tunneling - MATLAB}
+{PS10 - Quantum Chemistry}
+{MatLab simulation for transmittance probability of particle through barrier, with varying conditions.}
+%------------------------------------------------
+\entry
+{Spring 2013}
+{Simplex Algorithm Implementation - OCaml}
+{Final Project, Computer Science 51}
+{Simplex algorithm in ML with arbitrary precision floats, custom matrix library, and unsolvable/unbounded solution identification.}
+%------------------------------------------------
+\begin{detailed}
+\entry
+{Fall 2012}
+{Harvard Discuss Website - JavaScript, HTML/CSS, SQL, PHP}
+{Final Project, Computer Science 50}
+{Created \href{https://www.hcs.harvard.edu/~harvarddiscuss/index.php/en/}{Harvard Discuss}, a website focused on encouraging student collaboration through on-line discussion forums for individual classes and sections. Used Official Harvard Course Data to create individual sub-forums for each course and provide detail.}
+%------------------------------------------------
+\end{detailed}
+
+\section{interests}
+data analysis, mathematics, philosophy, foosball, soccer, science fiction
+\begin{detailed} 
+video production, running, poetry, company profiling,  community organizing, robotics, machine learning
+\end{detailed}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{pubs}
+\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+\end{pubs}
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

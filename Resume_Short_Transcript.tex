@@ -1,0 +1,335 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Friggeri Resume/CV 
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+% Modified by Luis Perez (luisperez@college.harvard.edu)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\usepackage{comment} % Allows commenting sections of code dynamically
+\usepackage{pdfpages}
+
+% Include and exclude different sections of resume (swap comment to do so)
+\excludecomment{pubs}
+%\includecomment{pubs}
+
+%\excludecomment{transcript}
+\includecomment{transcript}
+
+\excludecomment{detailed}
+%\includecomment{detailed}
+
+\begin{document}
+
+\header{luis}{perez}{\href{mailto:luis.perez.live@gmail.com}{luis.perez.live@gmail.com}} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+(permanent)
+1700 Douglass Road
+Nacogdoches, Texas 75964
+United States
+~
+(college)
+38 Leverett Mail Center
+Cambridge, Massachusetts 02138
+United States
+~
+(cell)
++1 (936) 250 0347
+~
+(on-line presence)
+\href{mailto:luisperez@college.harvard.edu}{luisperez@college}
+\href{http://facebook.com/kandluis}{fb://kandluis}
+\href{http://www.linkedin.com/pub/luis-perez/73/793/770}{lkin://luisperez}
+\href{http://www.github.com/kandluis}{git://kandluis}
+\section{languages}
+english - proficient
+spanish - conversational
+french - fluent
+\section{technical toolbox}
+{\color{red} $\varheartsuit$} OCaml
+Python, C, PHP
+SQL, Javascript (jQuery)
+CSS3 \& HTML5
+\LaTeX, RStudio
+\section{operating systems}
+Windows 8/7/Vista/XP
+Linux (Ubuntu,Fedora)
+Max OS X
+\section{web dev}
+\href{http://www.actonadream.org/}{actonadream.org}
+\href{http://www.lperez.site44.com}{lperez.site44.com}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+%------------------------------------------------
+\entry
+{August 2012--Present}
+{Bachelor {\normalfont of Arts}}
+{Harvard College, Cambridge}
+{Concentration in Computer Science with Secondary Field in Mathematics. Detur Prize Winner, John Harvard Scholar\\
+Relevant Coursework: Theory of Computation, Data Structures and Algorithms, Systems Programming, Machine Interfaces, Real Analysis, Abstract Linear Algebra \\
+\mydescription{GPA}{3.956/4.0}\\
+\mydescription{Concentration GPA}{4.0/4.0}
+}
+
+\begin{detailed}
+%------------------------------------------------
+\entry
+{August 2011--May 2012}
+{Dual {\normalfont Credit Student}}
+{Stephen F. Austin State University}
+{Completed courses in government and mathematics at local university while concurrently enrolled in high school.\\
+\mydescription{Overall GPA}{4.0}}
+\end{detailed}
+
+%------------------------------------------------
+\entry
+{August 2008--May 2012}
+{Student {\normalfont of General Studies}}
+{Nacogdoches High School, Nacogdoches}
+{Graduated as Valedictorian with Highest Honors in Core Courses.\\
+ % French Club President, UIL State Winners, MUN Security Council Rep., AP Scholar
+\mydescription{GPA}{106.56 |}
+\mydescription{ SAT (M,R,W)}{790, 800, 800 |}
+\mydescription{ Subject Tests (MI \& MII, Phy.)}{790,800, 800 |}}
+\begin{detailed}
+\mydescription{ ACT (R, M, En, Sc)}{34, 36, 34, 35}
+\end{detailed}
+%}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+%------------------------------------------------
+\entry
+{May 2014--August 2014}
+{HARVARD FOREST}
+{Petersham,Massachusetts}
+{\mydescription{Software Developer}{Worked with \href{blerner@mtholyoke.edu}{Barbara Lerner} and \href{boose@fas.harvard.edu}{Emery Boose}, using R, Apache Ant, Java, and git/svn. Achievements:  (1) developed data provenance collection software for the R Scripting environment, (2) developed extensive system tests with Apache Ant, (3) assisted in improving the visualization of data derivation graphs using Java, and (4) setup Git and SVN framework for version control.
+}}
+%------------------------------------------------
+\entry
+{May 2013--August 2013}
+{WYSS INSTITUTE}
+{Cambridge,Massachusetts}
+{\mydescription{1\textsuperscript{st} Year Student Researcher} 
+{Lead assistant to \href{mailto:pekassabian@sgh.com}{Dr. Paul Kassabian} and \href{jkwerfel@seas.harvard.edu}{Justin Werfel} in exploring decentralized, collective construction. Achievements: (1) explored decentralized algorithms for the construction of complex structures, (2) developed Python physics-based simulation based on SAP2000, interfaced using PyWin32, and (3) presented results to group of peers and professional researchers. 
+}}
+%------------------------------------------------
+\begin{detailed}
+\entry
+{January 2013--May 2013}
+{BUREAU OF STUDY COUNCIL}
+{Cambridge, Massachusetts}
+{\mydescription{OPT Tutor}
+{Tutored students in a varied array of mathematical subjects covering classes from Single Variable Pre-Calculus to Multi-variable Calculus (Math 21a). Topics touched on include but are not limited to dot product, cross product, polar and spherical coordinates, partial derivatives, Stokes' Theorem, Green's Theorem, and Divergence Theorem.}}
+\entry
+{August 20010--August 2012}
+{ALLELUIA HILLS RANCH}
+{Nacogdoches, Texas}
+{\mydescription{Ranch Hand}{Maintained upkeep of ranch. Duties included feeding horses, mowing, watering, cleaning debris, and odd jobs necessary for the well-being of animals.}}
+\end{detailed}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP SECTION
+%----------------------------------------------------------------------------------------
+
+\section{leadership}
+
+\entry
+{August 2013 - Present}
+{SCHOOL OF ENGINEERING AND APPLIED SCIENCES}
+{Cambridge,Massachusetts}
+{\mydescription{Teaching Fellow and Course Assistant}{Taught class of \~20 students to program in C, PHP,JavaScript and SQL. Introduced basic object-oriented concepts as well as memory management/hierarchy and good programming practices. Assisted all students (\~700) with weekly problem sets. Graded problem sets and exams.}\\}
+%------------------------------------------------
+\entry
+{August 2013--Present}
+{HARVARD MATHEMATICS DEPARTMENT}
+{Cambridge,Massachusetts}
+{\mydescription{Course Assistant}{Co-taught linear algebra course with \href{mailto:schieder@math.harvard.edu}{Simon Schieder} to class of ~30 students. Main concepts: kernels, images, transformations, vector spaces, and Fourier analysis. Co-taught introductory calculus course with \href{mailto:penner@fas.harvard.edu}{Kate Penner}. Main concepts: Riemann sums, integration, infinite series, differential equations and dynamical systems. Graded problem sets.}}
+ 
+\begin{detailed}
+%------------------------------------------------
+\entry
+{January 2013--Present}
+{THE HARVARD CRIMSON}
+{Cambridge, Massachusetts}
+{\mydescription{Technology Associate}
+{Maintained \href{http://thecrimson.com}{The Harvard Crimson} website, along with HighRise advertisement database. Utilized Django with administrative interface hosted on Amazon SW3. Heroku development server and git version control.}}
+%------------------------------------------------
+\entry
+{August 2012--Present}
+{ACT ON A DREAM AT HARVARD COLLEGE}
+{Cambridge, Massachusetts}
+\mydescription{{Director of Public Outreach}{Webdeveloper of \href{http://www.actonadream.org}{Act On A Dream}, a site dedicated to sharing valuable resources with undocumented students @ Harvard and their allies. As Director of Public Outreach, managed communication with external groups as well as organizing educational events. 
+}}
+\end{detailed}
+%-----------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{detailed}
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{Fall 2013, Fall 2014}
+{Detour Book Price}
+{Harvard Faculty}
+{Awarder to sophomores/juniors who have attained very high academic standing at the end of their freshman/sophomore year.}
+\entry
+{Fall 2013, Fall 2014}
+{John Harvard Scholar}
+{Harvard College}
+{Awarded to students in the top 5\% of their class.}
+\entry
+{Spring 2012}
+{AP Scholar with Distinction}
+{CollegeBoard}
+{Awarded to student with four or more passing AP Scores.}
+\entry
+{Spring 2012}
+{Outstanding Senior Award}
+{Nacogdoches High School}
+{Awarded to best student in graduating class.}
+\entry
+{Spring 2011}
+{National Laureat Certificate}
+{National French Contest}
+{Awarded to top 10 in National French Contest.}
+\entry
+{Fall 2009}
+{Placed in IB Biology Examination}
+{Stephen F. Austin State University}
+{Awarded for 3rd Place.}
+\end{entrylist}
+%------------------------------------------------
+\end{detailed}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{programming projects}
+
+%------------------------------------------------
+\entry
+{Summer 2014}
+{Automatic Mailing System}
+{Pet Project, Summer Internship}
+{Implementation of Edit Distance Dynamic programming algorithm for auto-email program.}
+\entry
+{December 14, 2013}
+{Quantum Tunneling - MatLab}
+{PS10 - Quantum Chemistry}
+{MatLab simulation for transmittance probability of particle through barrier, with varying conditions.}
+%------------------------------------------------
+\entry
+{August 17, 2013}
+{Decentralized Intelligence Project - Python}
+{REU Program @ Harvard}
+{Simulation of decentralized robotic construction using SAP 2000 and Python.}
+%------------------------------------------------
+%------------------------------------------------
+\entry
+{Spring 2013}
+{Simplex Algorithm Implementation - OCaml}
+{Final Project, Computer Science 51}
+{Implementation of Simplex algorithm in ML. Features: (1) arbitrary precision floats, (2) custom matrix library, (3) unsolvable and unbounded problem identification.}
+%------------------------------------------------
+\begin{detailed}
+\entry
+{Fall 2012}
+{Harvard Discuss Website - JavaScript, HTML/CSS, SQL, PHP}
+{Final Project, Computer Science 50}
+{Created \href{https://www.hcs.harvard.edu/~harvarddiscuss/index.php/en/}{Harvard Discuss}, a website focused on encouraging student collaboration through on-line discussion forums for individual classes and sections. Used Official Harvard Course Data to create individual sub-forums for each course and provide detail.}
+%------------------------------------------------
+\end{detailed}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} data analysis, mathematics, research
+\begin{detailed}
+, company profiling,  community organizing, web/software design, robotics, machine learning \\
+\end{detailed}
+\textbf{personal:} chess, soccer, science fiction,
+\begin{detailed} 
+philosophy, video production, photo editing, singing, foosball, running, poetry,
+\end{detailed}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{pubs}
+\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+\end{pubs}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TRANSCRIPT SECTION
+%----------------------------------------------------------------------------------------
+\begin{transcript}
+\includepdf[landscape=true,pages={1},angle=270]{unofficialTranscript_unsecure.pdf}
+\end{transcript}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
